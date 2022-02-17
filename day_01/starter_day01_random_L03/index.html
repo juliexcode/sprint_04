@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Mastering JS</title>
-</head>
+  </head>
 
-<body>
-        <h1>Mastering JS:01 Day L01</h1>
-        <h2>Introduction</h2>
-        <button onclick="alert('Mastering JavaScript!');">Click Me</button>
-        <script src=""></script>
-        <script src=""></script>
-        <script src=""></script>
-
-
-</body>
-
+  <body>
+    <h1>Mastering JS:01 Day L01</h1>
+    <h2>Introduction</h2>
+    <button onclick="alert('Mastering JavaScript!');">Click Me</button>
+    <script>
+      let jour = new Date();
+      let anne = jour.getFullYear();
+      let mois = jour.getMonth() + 1;
+      let journee = jour.getDate();
+      let heure = jour.getHours();
+      let minute = jour.getMinutes();
+      console.log(
+        anne +
+          "-" +
+          ("0" + mois).slice(-2) +
+          "-" +
+          ("0" + journee).slice(-2) +
+          " " +
+          ("0" + heure).slice(-2) +
+          ":" +
+          ("0" + minute).slice(-2)
+      );
+    </script>
+  </body>
 </html>
