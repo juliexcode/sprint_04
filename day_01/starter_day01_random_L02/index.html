@@ -15,10 +15,64 @@
       //   console.log("j'ai 2" + yourAge + " ans de plus que toi.");
 
       //2
-      let demande = window.prompt("Entrez votre année de naissance:");
-      console.log(demande);
-      if (demande) {
-      }
+      // let annee = window.prompt("Entrez votre année de naissance:");
+      // console.log(annee);
+
+      // myannee = new Date();
+      // anneenow = myannee.getFullYear();
+      // console.log(anneenow);
+      // let age = anneenow - annee;
+      // console.log(age);
+      // let time = 18 - age;
+      // if (age >= 18) {
+      //   alert("vous avez " + age + " ans. Vous êtes autorisé de conduire.");
+      // }
+      // if (age < 18) {
+      //   alert(
+      //     "vous avez " +
+      //       age +
+      //       " ans.Vous serez autorisé à conduire après " +
+      //       time +
+      //       " ans. "
+      //   );
+      // }
+
+      //3
+      // let annee = prompt("Entrez le nombre d'année que vous avez:");
+      // let sec = 31536000 * annee;
+      // alert("Vous avez vécu " + sec + " secs");
+
+      //4
+      let jour = new Date();
+      let anne = jour.getFullYear();
+      let mois = jour.getMonth() + 1;
+      let journee = jour.getDate();
+      let heure = jour.getHours();
+      let minute = jour.getMinutes();
+      //i
+      // console.log(
+      //   anne +
+      //     "-" +
+      //     ("0" + mois).slice(-2) +
+      //     "-" +
+      //     ("0" + journee).slice(-2) +
+      //     " " +
+      //     ("0" + heure).slice(-2) +
+      //     ":" +
+      //     ("0" + minute).slice(-2)
+      // );
+      //ii //iii
+      // console.log(
+      //   ("0" + journee).slice(-2) +
+      //     "-" +
+      //     ("0" + mois).slice(-2) +
+      //     "-" +
+      //     anne +
+      //     " " +
+      //     ("0" + heure).slice(-2) +
+      //     ":" +
+      //     ("0" + minute).slice(-2)
+      // );
     </script>
   </body>
 </html>
