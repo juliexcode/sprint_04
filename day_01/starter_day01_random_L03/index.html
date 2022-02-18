@@ -31,28 +31,39 @@
       // 1.2
       let mois = prompt("entrer un mois:");
       console.log(mois);
-      var moiss = [
-        "janvier",
-        "février",
-        "mars",
-        "avril",
-        "mai",
-        "juin",
-        "juillet",
-        "aout",
-        "septembre",
-        "octobre",
-        "novembre",
-        "décembre",
-      ];
-      console.log(moiss);
 
-      if (moiss <= 6) {
-        if (moiss % 2 == 0) {
-          alert(mois + " a 31 jours");
-        } else {
-          alert(mois + " a 30 jours");
-        }
+      let fevrier = "février";
+      let janvier = "janvier";
+      let mars = "mars";
+      let avril = "avril";
+      let mai = "mai";
+      let juin = "juin";
+      let juillet = "juillet";
+      let aout = "aout";
+      let septembre = "septembre";
+      let octobre = "octobre";
+      let novembre = "novembre";
+      let decembre = "décembre";
+
+      if (
+        mois == janvier ||
+        mois == mars ||
+        mois == mai ||
+        mois == juillet ||
+        mois == aout ||
+        mois == octobre ||
+        mois == decembre
+      ) {
+        alert(mois + " a 31 jours.");
+      } else if (
+        mois == avril ||
+        mois == juin ||
+        mois == septembre ||
+        mois == novembre
+      ) {
+        alert(mois + " a 30 jours.");
+      } else if (mois == fevrier) {
+        alert(mois + " a 28 jours.");
       }
     </script>
   </body>
