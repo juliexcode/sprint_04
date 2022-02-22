@@ -5,9 +5,125 @@
   </head>
 
   <body>
-    <h1>Mastering JS:02 Day L01</h1>
+    <h1>Mastering JS:03 Day L01</h1>
     <h2>Introduction</h2>
     <button onclick="alert('Mastering JavaScript!');">Click Me</button>
-    <script></script>
+    <script>
+      // 1
+      const countries = ["Finland", "Sweden", "Denmark", "Norway", "Iceland"];
+      const names = ["Max", "Mathias", "Elias", "Brook"];
+      const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const products = [
+        { product: "banana", price: 3 },
+        { product: "mango", price: 6 },
+        { product: "potato", price: " " },
+        { product: "avocado", price: 8 },
+        { product: "coffee", price: 10 },
+        { product: "tea", price: "" },
+      ];
+      console.log(countries);
+      console.log(names);
+      console.log(numbers);
+      console.log(products);
+      // La méthode forEach() permet d'exécuter une fonction donnée sur chaque élément du tableau.
+      // La méthode map() crée un nouveau tableau avec les résultats d'un tableau appeler
+      // La méthode filter() créer un nouveau tableau avec des elements trier
+      // La méthode reduce() applique une fonction qui est un « accumulateur » et qui traite chaque valeur d'une liste (de la gauche vers la droite) afin de la réduire à une seule valeur.
+
+      //  3
+      // countries.forEach((element) => console.log(element));
+
+      // 4
+      // names.forEach((element) => console.log(element));
+
+      //  5
+      // numbers.forEach((element) => console.log(element));
+
+      // 6
+      // const map1 = countries.map((x) => x.toUpperCase());
+      // console.log(map1);
+
+      // 7
+      // const map2 = countries.map((x) => x.length);
+      // console.log(map2);
+
+      // 8
+      // const map3 = numbers.map((x) => Math.sqrt(x));
+      // console.log(map3);
+
+      // 9
+      // const map4 = names.map((x) => x.toUpperCase());
+      // console.log(map4);
+
+      // 10
+      // const result = countries.filter((x) => x.includes("land"));
+      // console.log(result);
+
+      // 11
+      // const result2 = countries.filter((x) => x.length == 6);
+      // console.log(result2);
+
+      // 12
+      // const result3 = countries.filter((x) => x.length >= 6);
+      // console.log(result3);
+
+      // 13
+      // const result4 = names.filter((x) => x.includes("E"));
+      // console.log(result4);
+
+      // 14
+      // const result5 = products.filter((x) => x.);
+      // console.log(result5);
+
+      // 15
+      // const initvalue = 0;
+      // const red1 = numbers.reduce(
+      //   (previousValue, currentValue) => previousValue + currentValue,
+      //   initvalue
+      // );
+      // console.log(red1);
+
+      // 16
+      // var pays = countries.reduce(
+      //   function (prev, curr) {
+      //     return [...prev, ...curr];
+      //   },
+      //   ["Estonia"]
+      // );
+      // console.log(pays);
+
+      // 17
+      // La méthode some() teste si au moins un élément du tableau passe le test implémenté par la fonction fournie. Elle renvoie un booléen indiquant le résultat du test.
+      // La méthode every() permet de tester si tous les éléments d'un tableau vérifient une condition donnée par une fonction en argument. Cette méthode renvoie un booléen pour le résultat du test.
+
+      //18
+      // const even = (element) => element.length >= 7;
+      // console.log(names.some(even));
+
+      // 19
+      // const even2 = (element) => element.includes("land");
+      // console.log(countries.every(even2));
+
+      // 20
+      // La méthode find() renvoie la valeur du premier élément trouvé dans le tableau qui respecte la condition donnée par la fonction de test passée en argumentSinon, la valeur undefined est renvoyée.
+      // La méthode findIndex() renvoie l'indice du premier élément du tableau qui satisfait une condition donnée par une fonction. Si la fonction renvoie faux pour tous les éléments du tableau, le résultat vaut -1
+
+      //  21
+      // const found = countries.find((x) => x.length == 6);
+      // console.log(found);
+
+      //  22
+      // const result = (element) => element.length == 6;
+      // console.log(countries.findIndex(result));
+
+      // 23
+      // const indice = countries.findIndex((x) => x == "Norway");
+      // console.log(indice);
+      // console.log(countries[indice]);
+
+      // 24
+      // const indice2 = countries.findIndex((x) => x == "Russia");
+      // console.log(indice2);
+    </script>
   </body>
 </html>
